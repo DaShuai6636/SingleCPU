@@ -1,0 +1,33 @@
+# ===== Vivado 自动生成目录 =====
+*.jou
+*.log
+*.str
+
+# Vivado project-wide generated folders
+.cache/
+.Xil/
+*.sim/
+*.runs/
+*.ip_user_files/
+.webtalk/
+
+# Vivado IP caches
+*.cache/
+
+# Temporary build and usage data
+*.hw/
+*.sw/
+*.data/
+
+# Simulations
+xsim.dir/
+*.wdb
+*.pb
+*.svf
+*.bit
+*.bin
+*.mcs
+*.xml
+
+# GUI history
+*.crt
