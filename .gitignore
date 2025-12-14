@@ -1,33 +1,85 @@
-# ===== Vivado 自动生成目录 =====
+# Vivado 工程文件（由 Tcl 重建）
+*.xpr
+*.xpr.user
 *.jou
 *.log
-*.str
 
-# Vivado project-wide generated folders
-.cache/
-.Xil/
-*.sim/
-*.runs/
-*.ip_user_files/
-.webtalk/
-
-# Vivado IP caches
+# Vivado 自动生成目录
 *.cache/
-
-# Temporary build and usage data
 *.hw/
-*.sw/
-*.data/
+*.ip_user_files/
+*.runs/
+*.sim/
 
-# Simulations
+##################################################
+# sources_1 中的自动派生内容
+##################################################
+
+# Block Design / IP 自动生成物
+SingleCPU.srcs/sources_1/bd/*/ip/
+SingleCPU.srcs/sources_1/bd/*/hdl/
+SingleCPU.srcs/sources_1/bd/*/*.bda
+SingleCPU.srcs/sources_1/bd/*/*.xml
+SingleCPU.srcs/sources_1/bd/*/*.xdc
+
+##################################################
+# IP 生成产物（但保留 xci）
+##################################################
+
+SingleCPU.srcs/sources_1/ip/*/*.cache/
+SingleCPU.srcs/sources_1/ip/*/*.hw/
+SingleCPU.srcs/sources_1/ip/*/*.sim/
+SingleCPU.srcs/sources_1/ip/*/*.runs/
+SingleCPU.srcs/sources_1/ip/*/*.srcs/
+SingleCPU.srcs/sources_1/ip/*/*.dcp
+SingleCPU.srcs/sources_1/ip/*/*.veo
+SingleCPU.srcs/sources_1/ip/*/*.vho
+SingleCPU.srcs/sources_1/ip/*/*.xdc
+
+##################################################
+# utils_1 中的综合结果（你这个工程明确出现了）
+##################################################
+
+SingleCPU.srcs/utils_1/imports/synth_1/*.dcp
+
+##################################################
+# 仿真生成物
+##################################################
+
 xsim.dir/
 *.wdb
 *.pb
-*.svf
-*.bit
-*.bin
-*.mcs
-*.xml
 
-# GUI history
-*.crt
+##################################################
+# 编辑器 / 系统杂项
+##################################################
+
+*~
+*.bak
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+
+##################################################
+# ========= 明确保留的“设计输入” =========
+##################################################
+
+# Tcl（工程重建核心）
+!SingleCPU.tcl
+!**/*.tcl
+
+# RTL 源码（与你头部列出的 new 目录一致）
+!SingleCPU.srcs/sources_1/new/*.v
+
+# 约束文件
+!*.xdc
+
+# IP 描述文件
+!**/*.xci
+
+# 存储器初始化文件
+!**/*.coe
+!**/*.mem
+!**/*.hex
+SingleCPU.gen/sources_1/ip/dist_mem_IM/dist_mem_IM.xml
