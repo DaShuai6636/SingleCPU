@@ -61,6 +61,8 @@ xsim.dir/
 .vscode/
 .idea/
 
+SingleCPU.gen/
+
 ##################################################
 # ========= 明确保留的“设计输入” =========
 ##################################################
@@ -69,7 +71,7 @@ xsim.dir/
 !SingleCPU.tcl
 !**/*.tcl
 
-# RTL 源码（与你头部列出的 new 目录一致）
+# RTL 源码
 !SingleCPU.srcs/sources_1/new/*.v
 
 # 约束文件
@@ -82,4 +84,3 @@ xsim.dir/
 !**/*.coe
 !**/*.mem
 !**/*.hex
-SingleCPU.gen/sources_1/ip/dist_mem_IM/dist_mem_IM.xml
